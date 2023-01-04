@@ -146,63 +146,63 @@ library (user_project_wrapper) {
       capacitance : 0.0000;
     pin("io_in[37]") {
       direction : input;
-      capacitance : 0.3553;
+      capacitance : 0.3603;
     }
     pin("io_in[36]") {
       direction : input;
-      capacitance : 0.3485;
+      capacitance : 0.3472;
     }
     pin("io_in[35]") {
       direction : input;
-      capacitance : 0.4389;
+      capacitance : 0.4621;
     }
     pin("io_in[34]") {
       direction : input;
-      capacitance : 0.4215;
+      capacitance : 0.4129;
     }
     pin("io_in[33]") {
       direction : input;
-      capacitance : 0.3381;
+      capacitance : 0.3843;
     }
     pin("io_in[32]") {
       direction : input;
-      capacitance : 0.3660;
+      capacitance : 0.3236;
     }
     pin("io_in[31]") {
       direction : input;
-      capacitance : 0.3391;
+      capacitance : 0.3256;
     }
     pin("io_in[30]") {
       direction : input;
-      capacitance : 0.2569;
+      capacitance : 0.2950;
     }
     pin("io_in[29]") {
       direction : input;
-      capacitance : 0.2875;
+      capacitance : 0.2566;
     }
     pin("io_in[28]") {
       direction : input;
-      capacitance : 0.2651;
+      capacitance : 0.2152;
     }
     pin("io_in[27]") {
       direction : input;
-      capacitance : 0.2061;
+      capacitance : 0.1934;
     }
     pin("io_in[26]") {
       direction : input;
-      capacitance : 0.1685;
+      capacitance : 0.1684;
     }
     pin("io_in[25]") {
       direction : input;
-      capacitance : 0.1997;
+      capacitance : 0.2181;
     }
     pin("io_in[24]") {
       direction : input;
-      capacitance : 0.2347;
+      capacitance : 0.2346;
     }
     pin("io_in[23]") {
       direction : input;
-      capacitance : 0.1908;
+      capacitance : 0.2051;
     }
     pin("io_in[22]") {
       direction : input;
@@ -210,23 +210,23 @@ library (user_project_wrapper) {
     }
     pin("io_in[21]") {
       direction : input;
-      capacitance : 0.1209;
+      capacitance : 0.1393;
     }
     pin("io_in[20]") {
       direction : input;
-      capacitance : 0.0992;
+      capacitance : 0.0920;
     }
     pin("io_in[19]") {
       direction : input;
-      capacitance : 0.0633;
+      capacitance : 0.0626;
     }
     pin("io_in[18]") {
       direction : input;
-      capacitance : 0.1213;
+      capacitance : 0.0981;
     }
     pin("io_in[17]") {
       direction : input;
-      capacitance : 0.1166;
+      capacitance : 0.1165;
     }
     pin("io_in[16]") {
       direction : input;
@@ -234,67 +234,67 @@ library (user_project_wrapper) {
     }
     pin("io_in[15]") {
       direction : input;
-      capacitance : 0.2240;
+      capacitance : 0.1754;
     }
     pin("io_in[14]") {
       direction : input;
-      capacitance : 0.2355;
+      capacitance : 0.2447;
     }
     pin("io_in[13]") {
       direction : input;
-      capacitance : 0.1958;
+      capacitance : 0.2123;
     }
     pin("io_in[12]") {
       direction : input;
-      capacitance : 0.1389;
+      capacitance : 0.1377;
     }
     pin("io_in[11]") {
       direction : input;
-      capacitance : 0.2217;
+      capacitance : 0.2008;
     }
     pin("io_in[10]") {
       direction : input;
-      capacitance : 0.2172;
+      capacitance : 0.2691;
     }
     pin("io_in[9]") {
       direction : input;
-      capacitance : 0.2855;
+      capacitance : 0.2644;
     }
     pin("io_in[8]") {
       direction : input;
-      capacitance : 0.3357;
+      capacitance : 0.3087;
     }
     pin("io_in[7]") {
       direction : input;
-      capacitance : 0.4917;
+      capacitance : 0.3563;
     }
     pin("io_in[6]") {
       direction : input;
-      capacitance : 0.6161;
+      capacitance : 0.6025;
     }
     pin("io_in[5]") {
       direction : input;
-      capacitance : 0.6537;
+      capacitance : 0.6799;
     }
     pin("io_in[4]") {
       direction : input;
-      capacitance : 0.6476;
+      capacitance : 0.7002;
     }
     pin("io_in[3]") {
       direction : input;
-      capacitance : 0.6310;
+      capacitance : 0.6245;
     }
     pin("io_in[2]") {
       direction : input;
-      capacitance : 0.7609;
+      capacitance : 0.7662;
     }
     pin("io_in[1]") {
       direction : input;
-      capacitance : 0.7930;
+      capacitance : 0.5869;
     }
     pin("io_in[0]") {
       direction : input;
-      capacitance : 0.4997;
+      capacitance : 0.5543;
     }
     }
     bus("io_oeb") {

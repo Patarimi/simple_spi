@@ -25,9 +25,9 @@ module spi_wrapper(
 		.miso(io_out[7]),
 
 		.rword(io_out[8:15]),
-		.sword(io_in[16:22]),
-		.ovalid(io_out[23]),
-		.oready(io_in[24])
+		.sword(io_in[8:15]),
+		.ovalid(io_out[16]),
+		.oready(io_in[17])
 	);
 
 
