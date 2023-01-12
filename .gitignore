@@ -7,3 +7,10 @@
 *.vcd
 *.gtkw
 /verilog/gl/
+/caravel/
+/dependencies/
+/deps/
+/mgmt_core_wrapper/
+/precheck_results/
+/venv/
+

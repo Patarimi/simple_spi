@@ -33,8 +33,14 @@ module user_project_wrapper #(
     parameter BITS = 32
 )(
 `ifdef USE_POWER_PINS
-    inout vdd,		// User area 5.0V supply
-    inout vss,		// User area ground
+    inout vdda1,	// User area 1 3.3V supply
+    inout vdda2,	// User area 2 3.3V supply
+    inout vssa1,	// User area 1 analog ground
+    inout vssa2,	// User area 2 analog ground
+    inout vccd1,	// User area 1 1.8V supply
+    inout vccd2,	// User area 2 1.8v supply
+    inout vssd1,	// User area 1 digital ground
+    inout vssd2,	// User area 2 digital ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
@@ -69,53 +75,47 @@ module user_project_wrapper #(
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
-/*
 
-user_proj_example mprj (
+wire reg_dir, reg_bus, reg_clk;
+wire [2:0] reg_addr;
+
+spi_device ctrl(
 `ifdef USE_POWER_PINS
-	.vdd(vdd),	// User area 1 1.8V power
-	.vss(vss),	// User area 1 digital ground
+	.vccd1(vccd1),
+	.vccd1(vssd1),
 `endif
+	.spi_miso (io_out[5]),
+	.spi_mosi(io_in[6]),
+	.spi_clk(io_in[7]),
+	.spi_sel(io_in[8]),
+	.reg_dir(reg_dir),
+	.reg_bus(reg_bus),
+	.reg_clk(reg_clk),
+	.reg_addr(reg_addr)
+);
 
-    .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
-
-    // MGMT SoC Wishbone Slave
-
-    .wbs_cyc_i(wbs_cyc_i),
-    .wbs_stb_i(wbs_stb_i),
-    .wbs_we_i(wbs_we_i),
-    .wbs_sel_i(wbs_sel_i),
-    .wbs_adr_i(wbs_adr_i),
-    .wbs_dat_i(wbs_dat_i),
-    .wbs_ack_o(wbs_ack_o),
-    .wbs_dat_o(wbs_dat_o),
-
-    // Logic Analyzer
-
-    .la_data_in(la_data_in),
-    .la_data_out(la_data_out),
-    .la_oenb (la_oenb),
-
-    // IO Pads
-
-    .io_in (io_in),
-    .io_out(io_out),
-    .io_oeb(io_oeb),
-
-    // IRQ
-    .irq(user_irq)
-);*/
-spi_wrapper mprj(
+spi_register #(8,3,0) spi_reg0 (
 `ifdef USE_POWER_PINS
-	.vdd(vdd),	// User area 1 1.8V power
-	.vss(vss),	// User area 1 digital ground
+	.vccd1(vccd1),
+	.vssd1(vssd1),
 `endif
-	.wb_clk_i(wb_clk_i),
-	.wb_rst_i(wb_rst_i),
-	.io_in (io_in),
-	.io_out(io_out),
-	.io_oeb(io_oeb),
+	.reg_dir(reg_dir),
+	.reg_bus(reg_bus),
+	.reg_clk(reg_clk),
+	.reg_addr(reg_addr),
+	.reg_data(io_out[9:16])
+);
+
+spi_register #(8,3,1) spi_reg1 (
+`ifdef USE_POWER_PINS
+	.vccd1(vccd1),
+	.vssd1(vssd1),
+`endif
+	.reg_dir(reg_dir),
+	.reg_bus(reg_bus),
+	.reg_clk(reg_clk),
+	.reg_addr(reg_addr),
+	.reg_data(io_out[17:24])
 );
 
 endmodule	// user_project_wrapper

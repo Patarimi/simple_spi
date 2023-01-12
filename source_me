@@ -3,8 +3,8 @@
 export OPENLANE_ROOT=$(pwd)/dependencies/openlane_src
 export OPENLANE_PDK=$(pwd)/dependencies/pdks
 export PDK_ROOT=$(pwd)/dependencies/pdks
-# export PDK sky130A
-export PDK=gf180mcuC
+export PDK=sky130A
+# export PDK=gf180mcuC
 
-# source ./openlane-env/bin/activate
-
+# export OPENLANE_TAG=2023.01.12
+# export OPEN_PDKS_COMMIT=327e268bdb7191fe07a28bd40eeac055bba9dffd

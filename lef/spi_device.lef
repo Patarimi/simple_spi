@@ -1,0 +1,155 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO spi_device
+  CLASS BLOCK ;
+  FOREIGN spi_device ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 90.000 BY 90.000 ;
+  PIN reg_addr[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 86.000 22.910 90.000 ;
+    END
+  END reg_addr[0]
+  PIN reg_addr[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.350 86.000 37.630 90.000 ;
+    END
+  END reg_addr[1]
+  PIN reg_addr[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.070 86.000 52.350 90.000 ;
+    END
+  END reg_addr[2]
+  PIN reg_bus
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 66.790 86.000 67.070 90.000 ;
+    END
+  END reg_bus
+  PIN reg_clk
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.510 86.000 81.790 90.000 ;
+    END
+  END reg_clk
+  PIN reg_dir
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 7.910 86.000 8.190 90.000 ;
+    END
+  END reg_dir
+  PIN spi_clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 78.240 4.000 78.840 ;
+    END
+  END spi_clk
+  PIN spi_miso
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 10.920 4.000 11.520 ;
+    END
+  END spi_miso
+  PIN spi_mosi
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 33.360 4.000 33.960 ;
+    END
+  END spi_mosi
+  PIN spi_sel
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 55.800 4.000 56.400 ;
+    END
+  END spi_sel
+  PIN vcc
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 14.550 10.640 16.150 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 34.215 10.640 35.815 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 53.880 10.640 55.480 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 73.545 10.640 75.145 79.120 ;
+    END
+  END vcc
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.380 10.640 25.980 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 44.045 10.640 45.645 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 63.710 10.640 65.310 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 83.375 10.640 84.975 79.120 ;
+    END
+  END vss
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 84.180 78.965 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 84.975 79.120 ;
+      LAYER met2 ;
+        RECT 7.450 85.720 7.630 86.770 ;
+        RECT 8.470 85.720 22.350 86.770 ;
+        RECT 23.190 85.720 37.070 86.770 ;
+        RECT 37.910 85.720 51.790 86.770 ;
+        RECT 52.630 85.720 66.510 86.770 ;
+        RECT 67.350 85.720 81.230 86.770 ;
+        RECT 82.070 85.720 84.945 86.770 ;
+        RECT 7.450 10.695 84.945 85.720 ;
+      LAYER met3 ;
+        RECT 4.400 77.840 84.965 79.045 ;
+        RECT 4.000 56.800 84.965 77.840 ;
+        RECT 4.400 55.400 84.965 56.800 ;
+        RECT 4.000 34.360 84.965 55.400 ;
+        RECT 4.400 32.960 84.965 34.360 ;
+        RECT 4.000 11.920 84.965 32.960 ;
+        RECT 4.400 10.715 84.965 11.920 ;
+  END
+END spi_device
+END LIBRARY
+

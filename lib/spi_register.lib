@@ -1,0 +1,120 @@
+library (spi_register) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1v";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.80;
+
+  type ("reg_addr") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 3;
+    bit_from : 2;
+    bit_to : 0;
+  }
+  type ("reg_data") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 8;
+    bit_from : 7;
+    bit_to : 0;
+  }
+
+  cell ("spi_register") {
+    pin("reg_bus") {
+      direction : inout;
+      capacitance : 0.0485;
+    }
+    pin("reg_clk") {
+      direction : input;
+      capacitance : 0.0116;
+    }
+    pin("reg_dir") {
+      direction : input;
+      capacitance : 0.0043;
+    }
+    pin("vcc") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    pin("vss") {
+      direction : input;
+      capacitance : 0.0000;
+    }
+    bus("reg_addr") {
+      bus_type : reg_addr;
+      direction : input;
+      capacitance : 0.0000;
+    pin("reg_addr[2]") {
+      direction : input;
+      capacitance : 0.0049;
+    }
+    pin("reg_addr[1]") {
+      direction : input;
+      capacitance : 0.0044;
+    }
+    pin("reg_addr[0]") {
+      direction : input;
+      capacitance : 0.0044;
+    }
+    }
+    bus("reg_data") {
+      bus_type : reg_data;
+      direction : output;
+      capacitance : 0.0000;
+    pin("reg_data[7]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[6]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[5]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[4]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[3]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[2]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[1]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    pin("reg_data[0]") {
+      direction : output;
+      capacitance : 0.0334;
+    }
+    }
+  }
+
+}

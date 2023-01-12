@@ -1,0 +1,203 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO spi_register
+  CLASS BLOCK ;
+  FOREIGN spi_register ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 90.000 BY 90.000 ;
+  PIN reg_addr[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 0.000 22.910 4.000 ;
+    END
+  END reg_addr[0]
+  PIN reg_addr[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.350 0.000 37.630 4.000 ;
+    END
+  END reg_addr[1]
+  PIN reg_addr[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.070 0.000 52.350 4.000 ;
+    END
+  END reg_addr[2]
+  PIN reg_bus
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 66.790 0.000 67.070 4.000 ;
+    END
+  END reg_bus
+  PIN reg_clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.510 0.000 81.790 4.000 ;
+    END
+  END reg_clk
+  PIN reg_data[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.070 86.000 6.350 90.000 ;
+    END
+  END reg_data[0]
+  PIN reg_data[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.110 86.000 17.390 90.000 ;
+    END
+  END reg_data[1]
+  PIN reg_data[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.150 86.000 28.430 90.000 ;
+    END
+  END reg_data[2]
+  PIN reg_data[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 39.190 86.000 39.470 90.000 ;
+    END
+  END reg_data[3]
+  PIN reg_data[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 50.230 86.000 50.510 90.000 ;
+    END
+  END reg_data[4]
+  PIN reg_data[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 61.270 86.000 61.550 90.000 ;
+    END
+  END reg_data[5]
+  PIN reg_data[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 72.310 86.000 72.590 90.000 ;
+    END
+  END reg_data[6]
+  PIN reg_data[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 83.350 86.000 83.630 90.000 ;
+    END
+  END reg_data[7]
+  PIN reg_dir
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 7.910 0.000 8.190 4.000 ;
+    END
+  END reg_dir
+  PIN vcc
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 14.550 10.640 16.150 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 34.215 10.640 35.815 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 53.880 10.640 55.480 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 73.545 10.640 75.145 79.120 ;
+    END
+  END vcc
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.380 10.640 25.980 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 44.045 10.640 45.645 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 63.710 10.640 65.310 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 83.375 10.640 84.975 79.120 ;
+    END
+  END vss
+  OBS
+      LAYER nwell ;
+        RECT 5.330 77.465 84.370 79.070 ;
+        RECT 5.330 72.025 84.370 74.855 ;
+        RECT 5.330 66.585 84.370 69.415 ;
+        RECT 5.330 61.145 84.370 63.975 ;
+        RECT 5.330 55.705 84.370 58.535 ;
+        RECT 5.330 50.265 84.370 53.095 ;
+        RECT 5.330 44.825 84.370 47.655 ;
+        RECT 5.330 39.385 84.370 42.215 ;
+        RECT 5.330 33.945 84.370 36.775 ;
+        RECT 5.330 28.505 84.370 31.335 ;
+        RECT 5.330 23.065 84.370 25.895 ;
+        RECT 5.330 17.625 84.370 20.455 ;
+        RECT 5.330 12.185 84.370 15.015 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 84.180 78.965 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 84.975 79.120 ;
+      LAYER met2 ;
+        RECT 6.630 85.720 16.830 86.770 ;
+        RECT 17.670 85.720 27.870 86.770 ;
+        RECT 28.710 85.720 38.910 86.770 ;
+        RECT 39.750 85.720 49.950 86.770 ;
+        RECT 50.790 85.720 60.990 86.770 ;
+        RECT 61.830 85.720 72.030 86.770 ;
+        RECT 72.870 85.720 83.070 86.770 ;
+        RECT 83.910 85.720 84.945 86.770 ;
+        RECT 6.080 4.280 84.945 85.720 ;
+        RECT 6.080 4.000 7.630 4.280 ;
+        RECT 8.470 4.000 22.350 4.280 ;
+        RECT 23.190 4.000 37.070 4.280 ;
+        RECT 37.910 4.000 51.790 4.280 ;
+        RECT 52.630 4.000 66.510 4.280 ;
+        RECT 67.350 4.000 81.230 4.280 ;
+        RECT 82.070 4.000 84.945 4.280 ;
+      LAYER met3 ;
+        RECT 14.560 10.715 84.965 79.045 ;
+  END
+END spi_register
+END LIBRARY
+
