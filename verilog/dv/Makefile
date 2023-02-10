@@ -20,7 +20,7 @@
 .SILENT: clean all
 
 
-PATTERNS = tb_spi
+PATTERNS = spi
 
 all:  ${PATTERNS}
 

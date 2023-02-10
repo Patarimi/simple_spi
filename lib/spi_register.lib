@@ -43,21 +43,41 @@ library (spi_register) {
   cell ("spi_register") {
     pin("reg_bus") {
       direction : inout;
-      capacitance : 0.0485;
+      capacitance : 0.0583;
     }
     pin("reg_clk") {
       direction : input;
-      capacitance : 0.0116;
+      capacitance : 0.0103;
     }
     pin("reg_dir") {
       direction : input;
-      capacitance : 0.0043;
+      capacitance : 0.0040;
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.15954");
+	}
+	fall_constraint(scalar) {
+          values("-0.61489");
+	}
+      }
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("2.55909");
+	}
+	fall_constraint(scalar) {
+          values("2.60607");
+	}
+      }
     }
-    pin("vcc") {
+    pin("vccd1") {
       direction : input;
       capacitance : 0.0000;
     }
-    pin("vss") {
+    pin("vssd1") {
       direction : input;
       capacitance : 0.0000;
     }
@@ -67,15 +87,75 @@ library (spi_register) {
       capacitance : 0.0000;
     pin("reg_addr[2]") {
       direction : input;
-      capacitance : 0.0049;
+      capacitance : 0.0041;
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.06613");
+	}
+	fall_constraint(scalar) {
+          values("-0.45977");
+	}
+      }
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.38409");
+	}
+	fall_constraint(scalar) {
+          values("0.61987");
+	}
+      }
     }
     pin("reg_addr[1]") {
       direction : input;
-      capacitance : 0.0044;
+      capacitance : 0.0040;
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.09381");
+	}
+	fall_constraint(scalar) {
+          values("-0.56617");
+	}
+      }
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.41468");
+	}
+	fall_constraint(scalar) {
+          values("0.73746");
+	}
+      }
     }
     pin("reg_addr[0]") {
       direction : input;
-      capacitance : 0.0044;
+      capacitance : 0.0042;
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : hold_rising;
+	rise_constraint(scalar) {
+          values("-0.10587");
+	}
+	fall_constraint(scalar) {
+          values("-0.54173");
+	}
+      }
+      timing() {
+        related_pin : "reg_clk";
+        timing_type : setup_rising;
+	rise_constraint(scalar) {
+          values("0.42801");
+	}
+	fall_constraint(scalar) {
+          values("0.71046");
+	}
+      }
     }
     }
     bus("reg_data") {

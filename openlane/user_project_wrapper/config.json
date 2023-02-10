@@ -1,13 +1,17 @@
 {
     "DESIGN_NAME": "user_project_wrapper",
-    "LVS_CONNECT_BY_LABEL": true,
+    "ROUTING_CORES":7,
     "VERILOG_FILES": [
-        "dir::../../verilog/rtl/user_project_wrapper_cst.v",
+        "dir::../../verilog/rtl/user_project_wrapper.v",
         "dir::../../verilog/rtl/defines.v"],
     "CLOCK_PERIOD": 24,
     "CLOCK_PORT": "io_in[7]",
     "CLOCK_NET": "ctrl.spi_clk",
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
+    "FP_PDN_MACRO_HOOKS": [
+        "ctrl vccd1 vssd1 vccd1 vssd1,",
+        "spi_reg0 vccd1 vssd1 vccd1 vssd1,",
+        "spi_reg1 vccd1 vssd1 vccd1 vssd1"],
     "VERILOG_FILES_BLACKBOX": ["dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/rtl_core/spi.v"],
     "EXTRA_LEFS": [
@@ -16,12 +20,9 @@
     "EXTRA_GDS_FILES": [
         "dir::../../gds/spi_device.gds",
         "dir::../../gds/spi_register.gds"],
-    "FP_PDN_CHECK_NODES": 0,
-    "PL_RANDOM_GLB_PLACEMENT": 1,
     "PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
     "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
     "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
-    "FP_PDN_ENABLE_RAILS": 0,
     "DIODE_INSERTION_STRATEGY": 0,
     "RUN_FILL_INSERTION": 0,
     "RUN_TAP_DECAP_INSERTION": 0,
@@ -77,8 +78,6 @@
      },
     "pdk::gf180mcuC": {
         "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
-        "FP_PDN_CHECK_NODES": 0,
-        "FP_PDN_ENABLE_RAILS": 0,
         "RT_MAX_LAYER": "Metal4",
         "DIE_AREA": "0 0 3000 3000",
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper_gf180mcu.def",

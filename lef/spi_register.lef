@@ -6,13 +6,13 @@ MACRO spi_register
   CLASS BLOCK ;
   FOREIGN spi_register ;
   ORIGIN 0.000 0.000 ;
-  SIZE 90.000 BY 90.000 ;
+  SIZE 120.000 BY 120.000 ;
   PIN reg_addr[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 22.630 0.000 22.910 4.000 ;
+        RECT 29.990 0.000 30.270 4.000 ;
     END
   END reg_addr[0]
   PIN reg_addr[1]
@@ -20,7 +20,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 37.350 0.000 37.630 4.000 ;
+        RECT 49.770 0.000 50.050 4.000 ;
     END
   END reg_addr[1]
   PIN reg_addr[2]
@@ -28,7 +28,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 52.070 0.000 52.350 4.000 ;
+        RECT 69.550 0.000 69.830 4.000 ;
     END
   END reg_addr[2]
   PIN reg_bus
@@ -36,7 +36,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 66.790 0.000 67.070 4.000 ;
+        RECT 89.330 0.000 89.610 4.000 ;
     END
   END reg_bus
   PIN reg_clk
@@ -44,7 +44,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 81.510 0.000 81.790 4.000 ;
+        RECT 109.110 0.000 109.390 4.000 ;
     END
   END reg_clk
   PIN reg_data[0]
@@ -52,7 +52,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 6.070 86.000 6.350 90.000 ;
+        RECT 8.370 116.000 8.650 120.000 ;
     END
   END reg_data[0]
   PIN reg_data[1]
@@ -60,7 +60,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 17.110 86.000 17.390 90.000 ;
+        RECT 23.090 116.000 23.370 120.000 ;
     END
   END reg_data[1]
   PIN reg_data[2]
@@ -68,7 +68,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 28.150 86.000 28.430 90.000 ;
+        RECT 37.810 116.000 38.090 120.000 ;
     END
   END reg_data[2]
   PIN reg_data[3]
@@ -76,7 +76,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 39.190 86.000 39.470 90.000 ;
+        RECT 52.530 116.000 52.810 120.000 ;
     END
   END reg_data[3]
   PIN reg_data[4]
@@ -84,7 +84,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 50.230 86.000 50.510 90.000 ;
+        RECT 67.250 116.000 67.530 120.000 ;
     END
   END reg_data[4]
   PIN reg_data[5]
@@ -92,7 +92,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 61.270 86.000 61.550 90.000 ;
+        RECT 81.970 116.000 82.250 120.000 ;
     END
   END reg_data[5]
   PIN reg_data[6]
@@ -100,7 +100,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 72.310 86.000 72.590 90.000 ;
+        RECT 96.690 116.000 96.970 120.000 ;
     END
   END reg_data[6]
   PIN reg_data[7]
@@ -108,7 +108,7 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 83.350 86.000 83.630 90.000 ;
+        RECT 111.410 116.000 111.690 120.000 ;
     END
   END reg_data[7]
   PIN reg_dir
@@ -116,87 +116,92 @@ MACRO spi_register
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 7.910 0.000 8.190 4.000 ;
+        RECT 10.210 0.000 10.490 4.000 ;
     END
   END reg_dir
-  PIN vcc
+  PIN vccd1
     DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 14.550 10.640 16.150 79.120 ;
+        RECT 18.290 10.640 19.890 109.040 ;
     END
     PORT
       LAYER met4 ;
-        RECT 34.215 10.640 35.815 79.120 ;
+        RECT 45.430 10.640 47.030 109.040 ;
     END
     PORT
       LAYER met4 ;
-        RECT 53.880 10.640 55.480 79.120 ;
+        RECT 72.570 10.640 74.170 109.040 ;
     END
     PORT
       LAYER met4 ;
-        RECT 73.545 10.640 75.145 79.120 ;
+        RECT 99.710 10.640 101.310 109.040 ;
     END
-  END vcc
-  PIN vss
+  END vccd1
+  PIN vssd1
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 24.380 10.640 25.980 79.120 ;
+        RECT 31.860 10.640 33.460 109.040 ;
     END
     PORT
       LAYER met4 ;
-        RECT 44.045 10.640 45.645 79.120 ;
+        RECT 59.000 10.640 60.600 109.040 ;
     END
     PORT
       LAYER met4 ;
-        RECT 63.710 10.640 65.310 79.120 ;
+        RECT 86.140 10.640 87.740 109.040 ;
     END
     PORT
       LAYER met4 ;
-        RECT 83.375 10.640 84.975 79.120 ;
+        RECT 113.280 10.640 114.880 109.040 ;
     END
-  END vss
+  END vssd1
   OBS
       LAYER nwell ;
-        RECT 5.330 77.465 84.370 79.070 ;
-        RECT 5.330 72.025 84.370 74.855 ;
-        RECT 5.330 66.585 84.370 69.415 ;
-        RECT 5.330 61.145 84.370 63.975 ;
-        RECT 5.330 55.705 84.370 58.535 ;
-        RECT 5.330 50.265 84.370 53.095 ;
-        RECT 5.330 44.825 84.370 47.655 ;
-        RECT 5.330 39.385 84.370 42.215 ;
-        RECT 5.330 33.945 84.370 36.775 ;
-        RECT 5.330 28.505 84.370 31.335 ;
-        RECT 5.330 23.065 84.370 25.895 ;
-        RECT 5.330 17.625 84.370 20.455 ;
-        RECT 5.330 12.185 84.370 15.015 ;
+        RECT 5.330 104.665 114.270 107.495 ;
+        RECT 5.330 99.225 114.270 102.055 ;
+        RECT 5.330 93.785 114.270 96.615 ;
+        RECT 5.330 88.345 114.270 91.175 ;
+        RECT 5.330 82.905 114.270 85.735 ;
+        RECT 5.330 77.465 114.270 80.295 ;
+        RECT 5.330 72.025 114.270 74.855 ;
+        RECT 5.330 66.585 114.270 69.415 ;
+        RECT 5.330 61.145 114.270 63.975 ;
+        RECT 5.330 55.705 114.270 58.535 ;
+        RECT 5.330 50.265 114.270 53.095 ;
+        RECT 5.330 44.825 114.270 47.655 ;
+        RECT 5.330 39.385 114.270 42.215 ;
+        RECT 5.330 33.945 114.270 36.775 ;
+        RECT 5.330 28.505 114.270 31.335 ;
+        RECT 5.330 23.065 114.270 25.895 ;
+        RECT 5.330 17.625 114.270 20.455 ;
+        RECT 5.330 12.185 114.270 15.015 ;
       LAYER li1 ;
-        RECT 5.520 10.795 84.180 78.965 ;
+        RECT 5.520 10.795 114.080 108.885 ;
       LAYER met1 ;
-        RECT 5.520 10.640 84.975 79.120 ;
+        RECT 5.520 10.640 114.880 109.040 ;
       LAYER met2 ;
-        RECT 6.630 85.720 16.830 86.770 ;
-        RECT 17.670 85.720 27.870 86.770 ;
-        RECT 28.710 85.720 38.910 86.770 ;
-        RECT 39.750 85.720 49.950 86.770 ;
-        RECT 50.790 85.720 60.990 86.770 ;
-        RECT 61.830 85.720 72.030 86.770 ;
-        RECT 72.870 85.720 83.070 86.770 ;
-        RECT 83.910 85.720 84.945 86.770 ;
-        RECT 6.080 4.280 84.945 85.720 ;
-        RECT 6.080 4.000 7.630 4.280 ;
-        RECT 8.470 4.000 22.350 4.280 ;
-        RECT 23.190 4.000 37.070 4.280 ;
-        RECT 37.910 4.000 51.790 4.280 ;
-        RECT 52.630 4.000 66.510 4.280 ;
-        RECT 67.350 4.000 81.230 4.280 ;
-        RECT 82.070 4.000 84.945 4.280 ;
+        RECT 8.930 115.720 22.810 116.690 ;
+        RECT 23.650 115.720 37.530 116.690 ;
+        RECT 38.370 115.720 52.250 116.690 ;
+        RECT 53.090 115.720 66.970 116.690 ;
+        RECT 67.810 115.720 81.690 116.690 ;
+        RECT 82.530 115.720 96.410 116.690 ;
+        RECT 97.250 115.720 111.130 116.690 ;
+        RECT 111.970 115.720 114.850 116.690 ;
+        RECT 8.650 4.280 114.850 115.720 ;
+        RECT 8.650 4.000 9.930 4.280 ;
+        RECT 10.770 4.000 29.710 4.280 ;
+        RECT 30.550 4.000 49.490 4.280 ;
+        RECT 50.330 4.000 69.270 4.280 ;
+        RECT 70.110 4.000 89.050 4.280 ;
+        RECT 89.890 4.000 108.830 4.280 ;
+        RECT 109.670 4.000 114.850 4.280 ;
       LAYER met3 ;
-        RECT 14.560 10.715 84.965 79.045 ;
+        RECT 18.300 10.715 114.870 108.965 ;
   END
 END spi_register
 END LIBRARY

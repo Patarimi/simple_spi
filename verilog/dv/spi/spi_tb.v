@@ -1,0 +1,1 @@
+../../rtl/rtl_core/spi_tb.v

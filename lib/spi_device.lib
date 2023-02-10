@@ -36,7 +36,7 @@ library (spi_device) {
   cell ("spi_device") {
     pin("reg_bus") {
       direction : inout;
-      capacitance : 0.0353;
+      capacitance : 0.0459;
     }
     pin("reg_clk") {
       direction : output;
@@ -48,7 +48,7 @@ library (spi_device) {
     }
     pin("spi_clk") {
       direction : input;
-      capacitance : 0.0145;
+      capacitance : 0.0139;
     }
     pin("spi_miso") {
       direction : output;
@@ -56,37 +56,37 @@ library (spi_device) {
     }
     pin("spi_mosi") {
       direction : input;
-      capacitance : 0.0041;
+      capacitance : 0.0000;
     }
     pin("spi_sel") {
       direction : input;
-      capacitance : 0.0049;
+      capacitance : 0.0039;
       timing() {
         related_pin : "spi_clk";
-        timing_type : hold_rising;
+        timing_type : hold_falling;
 	rise_constraint(scalar) {
-          values("-0.23266");
+          values("0.02117");
 	}
 	fall_constraint(scalar) {
-          values("0.38772");
+          values("0.04522");
 	}
       }
       timing() {
         related_pin : "spi_clk";
-        timing_type : setup_rising;
+        timing_type : setup_falling;
 	rise_constraint(scalar) {
-          values("0.61005");
+          values("0.37336");
 	}
 	fall_constraint(scalar) {
-          values("0.63803");
+          values("0.47742");
 	}
       }
     }
-    pin("vcc") {
+    pin("vccd1") {
       direction : input;
       capacitance : 0.0000;
     }
-    pin("vss") {
+    pin("vssd1") {
       direction : input;
       capacitance : 0.0000;
     }

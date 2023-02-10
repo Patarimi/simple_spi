@@ -6,13 +6,13 @@ MACRO spi_device
   CLASS BLOCK ;
   FOREIGN spi_device ;
   ORIGIN 0.000 0.000 ;
-  SIZE 90.000 BY 90.000 ;
+  SIZE 250.000 BY 250.000 ;
   PIN reg_addr[0]
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 22.630 86.000 22.910 90.000 ;
+        RECT 62.650 246.000 62.930 250.000 ;
     END
   END reg_addr[0]
   PIN reg_addr[1]
@@ -20,7 +20,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 37.350 86.000 37.630 90.000 ;
+        RECT 104.050 246.000 104.330 250.000 ;
     END
   END reg_addr[1]
   PIN reg_addr[2]
@@ -28,7 +28,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 52.070 86.000 52.350 90.000 ;
+        RECT 145.450 246.000 145.730 250.000 ;
     END
   END reg_addr[2]
   PIN reg_bus
@@ -36,7 +36,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 66.790 86.000 67.070 90.000 ;
+        RECT 186.850 246.000 187.130 250.000 ;
     END
   END reg_bus
   PIN reg_clk
@@ -44,7 +44,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 81.510 86.000 81.790 90.000 ;
+        RECT 228.250 246.000 228.530 250.000 ;
     END
   END reg_clk
   PIN reg_dir
@@ -52,7 +52,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met2 ;
-        RECT 7.910 86.000 8.190 90.000 ;
+        RECT 21.250 246.000 21.530 250.000 ;
     END
   END reg_dir
   PIN spi_clk
@@ -60,7 +60,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 78.240 4.000 78.840 ;
+        RECT 0.000 216.960 4.000 217.560 ;
     END
   END spi_clk
   PIN spi_miso
@@ -68,7 +68,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 10.920 4.000 11.520 ;
+        RECT 0.000 31.320 4.000 31.920 ;
     END
   END spi_miso
   PIN spi_mosi
@@ -76,7 +76,7 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 33.360 4.000 33.960 ;
+        RECT 0.000 93.200 4.000 93.800 ;
     END
   END spi_mosi
   PIN spi_sel
@@ -84,71 +84,53 @@ MACRO spi_device
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 55.800 4.000 56.400 ;
+        RECT 0.000 155.080 4.000 155.680 ;
     END
   END spi_sel
-  PIN vcc
+  PIN vccd1
     DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 14.550 10.640 16.150 79.120 ;
+        RECT 21.040 10.640 22.640 236.880 ;
     END
     PORT
       LAYER met4 ;
-        RECT 34.215 10.640 35.815 79.120 ;
+        RECT 174.640 10.640 176.240 236.880 ;
     END
-    PORT
-      LAYER met4 ;
-        RECT 53.880 10.640 55.480 79.120 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 73.545 10.640 75.145 79.120 ;
-    END
-  END vcc
-  PIN vss
+  END vccd1
+  PIN vssd1
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 24.380 10.640 25.980 79.120 ;
+        RECT 97.840 10.640 99.440 236.880 ;
     END
-    PORT
-      LAYER met4 ;
-        RECT 44.045 10.640 45.645 79.120 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 63.710 10.640 65.310 79.120 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 83.375 10.640 84.975 79.120 ;
-    END
-  END vss
+  END vssd1
   OBS
       LAYER li1 ;
-        RECT 5.520 10.795 84.180 78.965 ;
+        RECT 5.520 10.795 244.260 236.725 ;
       LAYER met1 ;
-        RECT 5.520 10.640 84.975 79.120 ;
+        RECT 5.520 10.640 244.260 236.880 ;
       LAYER met2 ;
-        RECT 7.450 85.720 7.630 86.770 ;
-        RECT 8.470 85.720 22.350 86.770 ;
-        RECT 23.190 85.720 37.070 86.770 ;
-        RECT 37.910 85.720 51.790 86.770 ;
-        RECT 52.630 85.720 66.510 86.770 ;
-        RECT 67.350 85.720 81.230 86.770 ;
-        RECT 82.070 85.720 84.945 86.770 ;
-        RECT 7.450 10.695 84.945 85.720 ;
+        RECT 7.910 245.720 20.970 246.570 ;
+        RECT 21.810 245.720 62.370 246.570 ;
+        RECT 63.210 245.720 103.770 246.570 ;
+        RECT 104.610 245.720 145.170 246.570 ;
+        RECT 146.010 245.720 186.570 246.570 ;
+        RECT 187.410 245.720 227.970 246.570 ;
+        RECT 228.810 245.720 229.900 246.570 ;
+        RECT 7.910 10.695 229.900 245.720 ;
       LAYER met3 ;
-        RECT 4.400 77.840 84.965 79.045 ;
-        RECT 4.000 56.800 84.965 77.840 ;
-        RECT 4.400 55.400 84.965 56.800 ;
-        RECT 4.000 34.360 84.965 55.400 ;
-        RECT 4.400 32.960 84.965 34.360 ;
-        RECT 4.000 11.920 84.965 32.960 ;
-        RECT 4.400 10.715 84.965 11.920 ;
+        RECT 4.000 217.960 176.230 236.805 ;
+        RECT 4.400 216.560 176.230 217.960 ;
+        RECT 4.000 156.080 176.230 216.560 ;
+        RECT 4.400 154.680 176.230 156.080 ;
+        RECT 4.000 94.200 176.230 154.680 ;
+        RECT 4.400 92.800 176.230 94.200 ;
+        RECT 4.000 32.320 176.230 92.800 ;
+        RECT 4.400 30.920 176.230 32.320 ;
+        RECT 4.000 10.715 176.230 30.920 ;
   END
 END spi_device
 END LIBRARY

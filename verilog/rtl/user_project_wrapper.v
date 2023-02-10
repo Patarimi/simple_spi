@@ -65,6 +65,12 @@ module user_project_wrapper #(
     output [`MPRJ_IO_PADS-1:0] io_out,
     output [`MPRJ_IO_PADS-1:0] io_oeb,
 
+    // Analog (direct connection to GPIO pad---use with caution)
+    // Note that analog I/O is not available on the 7 lowest-numbered
+    // GPIO pads, and so the analog_io indexing is offset from the
+    // GPIO indexing by 7 (also upper 2 GPIOs do not have analog_io).
+    inout [`MPRJ_IO_PADS-10:0] analog_io,
+
     // Independent clock (on independent integer divider)
     input   user_clock2,
 
@@ -77,12 +83,26 @@ module user_project_wrapper #(
 /*--------------------------------------*/
 
 wire reg_dir, reg_bus, reg_clk;
-wire [2:0] reg_addr;
+wire [`MPRJ_IO_PADS-1:0] io_out, io_in, io_oeb;
+wire [31:0] wbs_dat_o;
 
-spi_device ctrl(
+localparam SPI_ADDR_WIDTH = 'd1;
+localparam SPI_REG_WIDTH = 'd8;
+
+wire [SPI_ADDR_WIDTH:0] reg_addr;
+
+assign wbs_ack_o = 1'b1;
+assign wbs_dat_o = 32'b0;
+assign la_data_out = 64'b0;
+assign io_out[0:4] = 5'b0;
+assign io_out[25:`MPRJ_IO_PADS-1] = `MPRJ_IO_PADS-26;
+assign io_oeb = 1'b1;	// Unused
+assign irq = 'b000;	// Unused
+
+spi_device #('d8, SPI_REG_WIDTH, SPI_ADDR_WIDTH) ctrl(
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),
-	.vccd1(vssd1),
+	.vssd1(vssd1),
 `endif
 	.spi_miso (io_out[5]),
 	.spi_mosi(io_in[6]),
@@ -94,7 +114,7 @@ spi_device ctrl(
 	.reg_addr(reg_addr)
 );
 
-spi_register #(8,3,0) spi_reg0 (
+spi_register #(SPI_REG_WIDTH, SPI_ADDR_WIDTH, 1'd0) spi_reg0 (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),
 	.vssd1(vssd1),
@@ -106,7 +126,7 @@ spi_register #(8,3,0) spi_reg0 (
 	.reg_data(io_out[9:16])
 );
 
-spi_register #(8,3,1) spi_reg1 (
+spi_register #(SPI_REG_WIDTH, SPI_ADDR_WIDTH, 1'd1) spi_reg1 (
 `ifdef USE_POWER_PINS
 	.vccd1(vccd1),
 	.vssd1(vssd1),

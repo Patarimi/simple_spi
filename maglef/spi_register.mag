@@ -1,119 +1,124 @@
 magic
-tech sky130A
+tech sky130B
 magscale 1 2
-timestamp 1673535446
+timestamp 1675783700
 << nwell >>
-rect 1066 15493 16874 15814
-rect 1066 14405 16874 14971
-rect 1066 13317 16874 13883
-rect 1066 12229 16874 12795
-rect 1066 11141 16874 11707
-rect 1066 10053 16874 10619
-rect 1066 8965 16874 9531
-rect 1066 7877 16874 8443
-rect 1066 6789 16874 7355
-rect 1066 5701 16874 6267
-rect 1066 4613 16874 5179
-rect 1066 3525 16874 4091
-rect 1066 2437 16874 3003
+rect 1066 20933 22854 21499
+rect 1066 19845 22854 20411
+rect 1066 18757 22854 19323
+rect 1066 17669 22854 18235
+rect 1066 16581 22854 17147
+rect 1066 15493 22854 16059
+rect 1066 14405 22854 14971
+rect 1066 13317 22854 13883
+rect 1066 12229 22854 12795
+rect 1066 11141 22854 11707
+rect 1066 10053 22854 10619
+rect 1066 8965 22854 9531
+rect 1066 7877 22854 8443
+rect 1066 6789 22854 7355
+rect 1066 5701 22854 6267
+rect 1066 4613 22854 5179
+rect 1066 3525 22854 4091
+rect 1066 2437 22854 3003
 << obsli1 >>
-rect 1104 2159 16836 15793
+rect 1104 2159 22816 21777
 << obsm1 >>
-rect 1104 2128 16995 15824
+rect 1104 2128 22976 21808
 << metal2 >>
-rect 1214 17200 1270 18000
-rect 3422 17200 3478 18000
-rect 5630 17200 5686 18000
-rect 7838 17200 7894 18000
-rect 10046 17200 10102 18000
-rect 12254 17200 12310 18000
-rect 14462 17200 14518 18000
-rect 16670 17200 16726 18000
-rect 1582 0 1638 800
-rect 4526 0 4582 800
-rect 7470 0 7526 800
-rect 10414 0 10470 800
-rect 13358 0 13414 800
-rect 16302 0 16358 800
+rect 1674 23200 1730 24000
+rect 4618 23200 4674 24000
+rect 7562 23200 7618 24000
+rect 10506 23200 10562 24000
+rect 13450 23200 13506 24000
+rect 16394 23200 16450 24000
+rect 19338 23200 19394 24000
+rect 22282 23200 22338 24000
+rect 2042 0 2098 800
+rect 5998 0 6054 800
+rect 9954 0 10010 800
+rect 13910 0 13966 800
+rect 17866 0 17922 800
+rect 21822 0 21878 800
 << obsm2 >>
-rect 1326 17144 3366 17354
-rect 3534 17144 5574 17354
-rect 5742 17144 7782 17354
-rect 7950 17144 9990 17354
-rect 10158 17144 12198 17354
-rect 12366 17144 14406 17354
-rect 14574 17144 16614 17354
-rect 16782 17144 16989 17354
-rect 1216 856 16989 17144
-rect 1216 800 1526 856
-rect 1694 800 4470 856
-rect 4638 800 7414 856
-rect 7582 800 10358 856
-rect 10526 800 13302 856
-rect 13470 800 16246 856
-rect 16414 800 16989 856
+rect 1786 23144 4562 23338
+rect 4730 23144 7506 23338
+rect 7674 23144 10450 23338
+rect 10618 23144 13394 23338
+rect 13562 23144 16338 23338
+rect 16506 23144 19282 23338
+rect 19450 23144 22226 23338
+rect 22394 23144 22970 23338
+rect 1730 856 22970 23144
+rect 1730 800 1986 856
+rect 2154 800 5942 856
+rect 6110 800 9898 856
+rect 10066 800 13854 856
+rect 14022 800 17810 856
+rect 17978 800 21766 856
+rect 21934 800 22970 856
 << obsm3 >>
-rect 2912 2143 16993 15809
+rect 3660 2143 22974 21793
 << metal4 >>
-rect 2910 2128 3230 15824
-rect 4876 2128 5196 15824
-rect 6843 2128 7163 15824
-rect 8809 2128 9129 15824
-rect 10776 2128 11096 15824
-rect 12742 2128 13062 15824
-rect 14709 2128 15029 15824
-rect 16675 2128 16995 15824
+rect 3658 2128 3978 21808
+rect 6372 2128 6692 21808
+rect 9086 2128 9406 21808
+rect 11800 2128 12120 21808
+rect 14514 2128 14834 21808
+rect 17228 2128 17548 21808
+rect 19942 2128 20262 21808
+rect 22656 2128 22976 21808
 << labels >>
-rlabel metal2 s 4526 0 4582 800 6 reg_addr[0]
+rlabel metal2 s 5998 0 6054 800 6 reg_addr[0]
 port 1 nsew signal input
-rlabel metal2 s 7470 0 7526 800 6 reg_addr[1]
+rlabel metal2 s 9954 0 10010 800 6 reg_addr[1]
 port 2 nsew signal input
-rlabel metal2 s 10414 0 10470 800 6 reg_addr[2]
+rlabel metal2 s 13910 0 13966 800 6 reg_addr[2]
 port 3 nsew signal input
-rlabel metal2 s 13358 0 13414 800 6 reg_bus
+rlabel metal2 s 17866 0 17922 800 6 reg_bus
 port 4 nsew signal bidirectional
-rlabel metal2 s 16302 0 16358 800 6 reg_clk
+rlabel metal2 s 21822 0 21878 800 6 reg_clk
 port 5 nsew signal input
-rlabel metal2 s 1214 17200 1270 18000 6 reg_data[0]
+rlabel metal2 s 1674 23200 1730 24000 6 reg_data[0]
 port 6 nsew signal output
-rlabel metal2 s 3422 17200 3478 18000 6 reg_data[1]
+rlabel metal2 s 4618 23200 4674 24000 6 reg_data[1]
 port 7 nsew signal output
-rlabel metal2 s 5630 17200 5686 18000 6 reg_data[2]
+rlabel metal2 s 7562 23200 7618 24000 6 reg_data[2]
 port 8 nsew signal output
-rlabel metal2 s 7838 17200 7894 18000 6 reg_data[3]
+rlabel metal2 s 10506 23200 10562 24000 6 reg_data[3]
 port 9 nsew signal output
-rlabel metal2 s 10046 17200 10102 18000 6 reg_data[4]
+rlabel metal2 s 13450 23200 13506 24000 6 reg_data[4]
 port 10 nsew signal output
-rlabel metal2 s 12254 17200 12310 18000 6 reg_data[5]
+rlabel metal2 s 16394 23200 16450 24000 6 reg_data[5]
 port 11 nsew signal output
-rlabel metal2 s 14462 17200 14518 18000 6 reg_data[6]
+rlabel metal2 s 19338 23200 19394 24000 6 reg_data[6]
 port 12 nsew signal output
-rlabel metal2 s 16670 17200 16726 18000 6 reg_data[7]
+rlabel metal2 s 22282 23200 22338 24000 6 reg_data[7]
 port 13 nsew signal output
-rlabel metal2 s 1582 0 1638 800 6 reg_dir
+rlabel metal2 s 2042 0 2098 800 6 reg_dir
 port 14 nsew signal input
-rlabel metal4 s 2910 2128 3230 15824 6 vcc
+rlabel metal4 s 3658 2128 3978 21808 6 vccd1
 port 15 nsew power bidirectional
-rlabel metal4 s 6843 2128 7163 15824 6 vcc
+rlabel metal4 s 9086 2128 9406 21808 6 vccd1
 port 15 nsew power bidirectional
-rlabel metal4 s 10776 2128 11096 15824 6 vcc
+rlabel metal4 s 14514 2128 14834 21808 6 vccd1
 port 15 nsew power bidirectional
-rlabel metal4 s 14709 2128 15029 15824 6 vcc
+rlabel metal4 s 19942 2128 20262 21808 6 vccd1
 port 15 nsew power bidirectional
-rlabel metal4 s 4876 2128 5196 15824 6 vss
+rlabel metal4 s 6372 2128 6692 21808 6 vssd1
 port 16 nsew ground bidirectional
-rlabel metal4 s 8809 2128 9129 15824 6 vss
+rlabel metal4 s 11800 2128 12120 21808 6 vssd1
 port 16 nsew ground bidirectional
-rlabel metal4 s 12742 2128 13062 15824 6 vss
+rlabel metal4 s 17228 2128 17548 21808 6 vssd1
 port 16 nsew ground bidirectional
-rlabel metal4 s 16675 2128 16995 15824 6 vss
+rlabel metal4 s 22656 2128 22976 21808 6 vssd1
 port 16 nsew ground bidirectional
 << properties >>
-string FIXED_BBOX 0 0 18000 18000
+string FIXED_BBOX 0 0 24000 24000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 430064
-string GDS_FILE /home/mpotereau/DigitalFlowTest/gf_spi_test/openlane/spi_register/runs/23_01_12_15_56/results/signoff/spi_register.magic.gds
-string GDS_START 166290
+string GDS_END 559138
+string GDS_FILE /home/mpotereau/DigitalFlowTest/gf_spi_test/openlane/spi_register/runs/23_02_07_16_26/results/signoff/spi_register.magic.gds
+string GDS_START 201088
 << end >>
 
