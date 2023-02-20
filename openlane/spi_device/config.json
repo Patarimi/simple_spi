@@ -3,7 +3,7 @@
     "DESIGN_IS_CORE" : 0,
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/rtl_core/spi.v"
+        "dir::../../verilog/rtl_core/spi_device/spi_device.v"
         ],
     "CLOCK_PERIOD": 50,
     "CLOCK_PORT": "spi_clk",

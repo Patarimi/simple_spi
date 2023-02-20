@@ -1,7 +1,7 @@
 magic
 tech sky130B
 magscale 1 2
-timestamp 1675785212
+timestamp 1676900968
 << obsli1 >>
 rect 1104 2159 48852 47345
 << obsm1 >>
@@ -73,7 +73,7 @@ string FIXED_BBOX 0 0 50000 50000
 string LEFclass BLOCK
 string LEFview TRUE
 string GDS_END 832828
-string GDS_FILE /home/mpotereau/DigitalFlowTest/gf_spi_test/openlane/spi_device/runs/23_02_07_16_52/results/signoff/spi_device.magic.gds
+string GDS_FILE /home/mpotereau/DigitalFlowTest/gf_spi_test/openlane/spi_device/runs/23_02_20_14_48/results/signoff/spi_device.magic.gds
 string GDS_START 174560
 << end >>
 

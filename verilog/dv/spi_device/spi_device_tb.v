@@ -1,0 +1,1 @@
+../../rtl_core/spi_device/spi_device_tb.v
