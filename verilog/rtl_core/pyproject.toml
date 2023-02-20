@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rtl-core"
+version = "0.1.0"
+description = "Tested verilog module for hardware design."
+authors = ["Patarimi <mpqqch@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rtl_core"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+hdlmake = "^3.3"
+six = "^1.16.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
