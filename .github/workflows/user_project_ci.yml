@@ -62,7 +62,9 @@ jobs:
         run: echo "PDK_ROOT=/home/runner/work/pdk" >> $GITHUB_ENV
 
       - name: Export PDK
-        run: grep "^export PDK=" source_me | sed "s/export //" >> $GITHUB_ENV
+        run: |
+          source source_me
+          echo "\$PDK=$PDK" >> $GITHUB_ENV
 
       - name: Export PDK PATH
         run: echo "PDKPATH=$PDK_ROOT/$PDK" >> $GITHUB_ENV
