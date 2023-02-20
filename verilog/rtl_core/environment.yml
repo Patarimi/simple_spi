@@ -1,9 +1,0 @@
-name: venv
-
-channels:
-    - default
-    - conda-forge
-   
-dependencies:
-    - python
-
