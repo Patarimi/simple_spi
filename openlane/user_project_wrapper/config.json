@@ -13,7 +13,7 @@
         "spi_reg0 vccd1 vssd1 vccd1 vssd1,",
         "spi_reg1 vccd1 vssd1 vccd1 vssd1"],
     "VERILOG_FILES_BLACKBOX": ["dir::../../verilog/rtl/defines.v",
-        "dir::../../verilog/rtl/rtl_core/spi.v"],
+        "dir::../../verilog/rtl_core/spi_device/spi_device.v"],
     "EXTRA_LEFS": [
         "dir::../../lef/spi_device.lef",
         "dir::../../lef/spi_register.lef"],
