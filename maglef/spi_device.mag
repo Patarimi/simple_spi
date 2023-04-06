@@ -1,11 +1,11 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1676908156
+timestamp 1680689009
 << obsli1 >>
 rect 1104 2159 48852 47345
 << obsm1 >>
-rect 1104 2128 48852 47376
+rect 934 2128 48852 47376
 << metal2 >>
 rect 4250 49200 4306 50000
 rect 12530 49200 12586 50000
@@ -14,14 +14,14 @@ rect 29090 49200 29146 50000
 rect 37370 49200 37426 50000
 rect 45650 49200 45706 50000
 << obsm2 >>
-rect 1582 49144 4194 49314
+rect 938 49144 4194 49314
 rect 4362 49144 12474 49314
 rect 12642 49144 20754 49314
 rect 20922 49144 29034 49314
 rect 29202 49144 37314 49314
 rect 37482 49144 45594 49314
 rect 45762 49144 45980 49314
-rect 1582 2139 45980 49144
+rect 938 2139 45980 49144
 << metal3 >>
 rect 0 43392 800 43512
 rect 0 31016 800 31136
@@ -72,8 +72,8 @@ port 12 nsew ground bidirectional
 string FIXED_BBOX 0 0 50000 50000
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 832828
-string GDS_FILE /home/mpotereau/DigitalFlowTest/gf_spi_test/openlane/spi_device/runs/23_02_20_16_47/results/signoff/spi_device.magic.gds
+string GDS_END 827812
+string GDS_FILE /home/mpotereau/DigitalFlowTest/ol_mpw2304c/openlane/spi_device/runs/23_04_05_12_02/results/signoff/spi_device.magic.gds
 string GDS_START 174560
 << end >>
 

@@ -20,7 +20,7 @@
 .SILENT: clean all
 
 
-PATTERNS = spi
+PATTERNS = spi_device
 
 all:  ${PATTERNS}
 

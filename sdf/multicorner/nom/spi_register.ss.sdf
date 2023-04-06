@@ -1,46 +1,46 @@
 (DELAYFILE
  (SDFVERSION "3.0")
  (DESIGN "spi_register")
- (DATE "Wed Apr  5 10:05:18 2023")
+ (DATE "Wed Apr  5 10:05:17 2023")
  (VENDOR "Parallax")
  (PROGRAM "STA")
  (VERSION "2.3.3")
  (DIVIDER .)
- (VOLTAGE 1.800::1.800)
+ (VOLTAGE 1.600::1.600)
  (PROCESS "1.000::1.000")
- (TEMPERATURE 25.000::25.000)
+ (TEMPERATURE 100.000::100.000)
  (TIMESCALE 1ns)
  (CELL
   (CELLTYPE "spi_register")
   (INSTANCE)
   (DELAY
    (ABSOLUTE
-    (INTERCONNECT reg_addr[0] input1.A (0.017:0.017:0.017) (0.007:0.007:0.007))
-    (INTERCONNECT reg_addr[0] ANTENNA_input1_A.DIODE (0.017:0.017:0.017) (0.007:0.007:0.007))
-    (INTERCONNECT reg_addr[1] input2.A (0.016:0.016:0.016) (0.007:0.007:0.007))
-    (INTERCONNECT reg_addr[1] ANTENNA_input2_A.DIODE (0.016:0.016:0.016) (0.007:0.007:0.007))
-    (INTERCONNECT reg_addr[2] input3.A (0.016:0.016:0.016) (0.007:0.007:0.007))
-    (INTERCONNECT reg_addr[2] ANTENNA_input3_A.DIODE (0.016:0.016:0.016) (0.007:0.007:0.007))
-    (INTERCONNECT reg_bus _71_.D (0.264:0.264:0.264) (0.133:0.133:0.133))
-    (INTERCONNECT reg_bus _72_.D (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus _73_.D (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus _74_.D (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus _75_.D (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus _76_.D (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus _77_.D (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus _78_.D (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__78__D.DIODE (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__77__D.DIODE (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__76__D.DIODE (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__75__D.DIODE (0.265:0.265:0.265) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__74__D.DIODE (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__73__D.DIODE (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__72__D.DIODE (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_bus ANTENNA__71__D.DIODE (0.264:0.264:0.264) (0.134:0.134:0.134))
-    (INTERCONNECT reg_clk clkbuf_0_reg_clk.A (0.036:0.036:0.036) (0.016:0.016:0.016))
-    (INTERCONNECT reg_clk ANTENNA_clkbuf_0_reg_clk_A.DIODE (0.036:0.036:0.036) (0.015:0.015:0.015))
-    (INTERCONNECT reg_dir input4.A (0.016:0.016:0.016) (0.007:0.007:0.007))
-    (INTERCONNECT reg_dir ANTENNA_input4_A.DIODE (0.016:0.016:0.016) (0.007:0.007:0.007))
+    (INTERCONNECT reg_addr[0] input1.A (0.026:0.026:0.026) (0.015:0.015:0.015))
+    (INTERCONNECT reg_addr[0] ANTENNA_input1_A.DIODE (0.026:0.026:0.026) (0.015:0.015:0.015))
+    (INTERCONNECT reg_addr[1] input2.A (0.024:0.024:0.024) (0.014:0.014:0.014))
+    (INTERCONNECT reg_addr[1] ANTENNA_input2_A.DIODE (0.024:0.024:0.024) (0.014:0.014:0.014))
+    (INTERCONNECT reg_addr[2] input3.A (0.025:0.025:0.025) (0.014:0.014:0.014))
+    (INTERCONNECT reg_addr[2] ANTENNA_input3_A.DIODE (0.025:0.025:0.025) (0.014:0.014:0.014))
+    (INTERCONNECT reg_bus _71_.D (0.417:0.417:0.417) (0.251:0.251:0.251))
+    (INTERCONNECT reg_bus _72_.D (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus _73_.D (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus _74_.D (0.417:0.417:0.417) (0.251:0.251:0.251))
+    (INTERCONNECT reg_bus _75_.D (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus _76_.D (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus _77_.D (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus _78_.D (0.417:0.417:0.417) (0.251:0.251:0.251))
+    (INTERCONNECT reg_bus ANTENNA__78__D.DIODE (0.417:0.417:0.417) (0.251:0.251:0.251))
+    (INTERCONNECT reg_bus ANTENNA__77__D.DIODE (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus ANTENNA__76__D.DIODE (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus ANTENNA__75__D.DIODE (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus ANTENNA__74__D.DIODE (0.417:0.417:0.417) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus ANTENNA__73__D.DIODE (0.418:0.418:0.418) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus ANTENNA__72__D.DIODE (0.417:0.417:0.417) (0.252:0.252:0.252))
+    (INTERCONNECT reg_bus ANTENNA__71__D.DIODE (0.417:0.417:0.417) (0.251:0.251:0.251))
+    (INTERCONNECT reg_clk clkbuf_0_reg_clk.A (0.056:0.056:0.056) (0.031:0.031:0.031))
+    (INTERCONNECT reg_clk ANTENNA_clkbuf_0_reg_clk_A.DIODE (0.056:0.056:0.056) (0.031:0.031:0.031))
+    (INTERCONNECT reg_dir input4.A (0.024:0.024:0.024) (0.014:0.014:0.014))
+    (INTERCONNECT reg_dir ANTENNA_input4_A.DIODE (0.024:0.024:0.024) (0.014:0.014:0.014))
     (INTERCONNECT _34_.X _35_.A (0.000:0.000:0.000) (0.000:0.000:0.000))
     (INTERCONNECT _35_.X _36_.A2 (0.001:0.001:0.001) (0.000:0.000:0.000))
     (INTERCONNECT _35_.X _37_.A2 (0.000:0.000:0.000) (0.000:0.000:0.000))
@@ -82,7 +82,7 @@
     (INTERCONNECT _58__3.Y _69_.CLK (0.000:0.000:0.000) (0.000:0.000:0.000))
     (INTERCONNECT _59__4.Y _70_.CLK (0.000:0.000:0.000) (0.000:0.000:0.000))
     (INTERCONNECT clkbuf_0_reg_clk.X clkbuf_1_0__f_reg_clk.A (0.000:0.000:0.000) (0.000:0.000:0.000))
-    (INTERCONNECT clkbuf_0_reg_clk.X clkbuf_1_1__f_reg_clk.A (0.001:0.001:0.001) (0.000:0.000:0.000))
+    (INTERCONNECT clkbuf_0_reg_clk.X clkbuf_1_1__f_reg_clk.A (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT _60_.X _61_.B (0.000:0.000:0.000) (0.000:0.000:0.000))
     (INTERCONNECT _61_.X _66_.A1 (0.000:0.000:0.000) (0.000:0.000:0.000))
     (INTERCONNECT _62_.X _63_.A (0.000:0.000:0.000) (0.000:0.000:0.000))
@@ -94,10 +94,10 @@
     (INTERCONNECT _67_.Q _34_.B (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT _67_.Q _38_.B (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT _67_.Q _40_.A (0.001:0.001:0.001) (0.001:0.001:0.001))
-    (INTERCONNECT _67_.Q _46_.A_N (0.002:0.002:0.002) (0.002:0.002:0.002))
-    (INTERCONNECT _67_.Q _48_.B (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT _67_.Q _46_.A_N (0.002:0.002:0.002) (0.001:0.001:0.001))
+    (INTERCONNECT _67_.Q _48_.B (0.002:0.002:0.002) (0.001:0.001:0.001))
     (INTERCONNECT _67_.Q _60_.S0 (0.002:0.002:0.002) (0.002:0.002:0.002))
-    (INTERCONNECT _67_.Q _62_.S0 (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT _67_.Q _62_.S0 (0.002:0.002:0.002) (0.001:0.001:0.001))
     (INTERCONNECT _68_.Q _34_.A (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT _68_.Q _38_.A (0.001:0.001:0.001) (0.001:0.001:0.001))
     (INTERCONNECT _68_.Q _46_.B (0.001:0.001:0.001) (0.001:0.001:0.001))
@@ -191,8 +191,8 @@
   (INSTANCE _34_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.150:0.150:0.150) (0.152:0.152:0.152))
-    (IOPATH B X (0.138:0.138:0.138) (0.159:0.159:0.159))
+    (IOPATH A X (0.304:0.304:0.304) (0.322:0.322:0.322))
+    (IOPATH B X (0.278:0.278:0.278) (0.334:0.334:0.334))
    )
   )
  )
@@ -201,7 +201,7 @@
   (INSTANCE _35_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.213:0.214:0.214) (0.193:0.193:0.193))
+    (IOPATH A X (0.356:0.356:0.357) (0.396:0.397:0.397))
    )
   )
  )
@@ -210,9 +210,9 @@
   (INSTANCE _36_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A1 Y (0.153:0.153:0.153) (0.098:0.098:0.098))
-    (IOPATH A2 Y (0.176:0.176:0.176) (0.108:0.108:0.108))
-    (IOPATH B1 Y (0.136:0.136:0.136) (0.064:0.064:0.064))
+    (IOPATH A1 Y (0.272:0.272:0.272) (0.221:0.221:0.221))
+    (IOPATH A2 Y (0.310:0.310:0.310) (0.239:0.239:0.239))
+    (IOPATH B1 Y (0.234:0.234:0.234) (0.144:0.144:0.144))
    )
   )
  )
@@ -221,9 +221,9 @@
   (INSTANCE _37_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A1 X (0.158:0.158:0.158) (0.203:0.203:0.203))
-    (IOPATH A2 X (0.146:0.146:0.146) (0.194:0.194:0.194))
-    (IOPATH B1 X (0.134:0.137:0.140) (0.106:0.110:0.114))
+    (IOPATH A1 X (0.329:0.329:0.329) (0.387:0.387:0.387))
+    (IOPATH A2 X (0.305:0.305:0.305) (0.375:0.375:0.375))
+    (IOPATH B1 X (0.271:0.276:0.280) (0.203:0.213:0.222))
    )
   )
  )
@@ -232,8 +232,8 @@
   (INSTANCE _38_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.209:0.209:0.209) (0.112:0.112:0.112))
-    (IOPATH B Y (0.184:0.184:0.184) (0.092:0.092:0.092))
+    (IOPATH A Y (0.367:0.367:0.367) (0.232:0.232:0.232))
+    (IOPATH B Y (0.320:0.320:0.320) (0.191:0.191:0.191))
    )
   )
  )
@@ -242,9 +242,9 @@
   (INSTANCE _39_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.224:0.224:0.224) (0.087:0.087:0.087))
-    (IOPATH B Y (0.223:0.223:0.223) (0.093:0.093:0.093))
-    (IOPATH C Y (0.172:0.174:0.176) (0.082:0.082:0.082))
+    (IOPATH A Y (0.397:0.397:0.397) (0.179:0.179:0.179))
+    (IOPATH B Y (0.403:0.403:0.403) (0.199:0.199:0.199))
+    (IOPATH C Y (0.298:0.302:0.306) (0.185:0.185:0.185))
    )
   )
  )
@@ -253,8 +253,8 @@
   (INSTANCE _40_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.112:0.112:0.112) (0.069:0.069:0.069))
-    (IOPATH B Y (0.096:0.096:0.096) (0.059:0.059:0.059))
+    (IOPATH A Y (0.195:0.195:0.195) (0.151:0.151:0.151))
+    (IOPATH B Y (0.170:0.170:0.170) (0.136:0.136:0.136))
    )
   )
  )
@@ -263,7 +263,7 @@
   (INSTANCE _41_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.109:0.109:0.109) (0.105:0.105:0.105))
+    (IOPATH A X (0.228:0.228:0.228) (0.203:0.203:0.203))
    )
   )
  )
@@ -272,7 +272,7 @@
   (INSTANCE _42_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.168:0.168:0.168) (0.119:0.119:0.119))
+    (IOPATH A X (0.301:0.301:0.301) (0.231:0.231:0.231))
    )
   )
  )
@@ -281,10 +281,10 @@
   (INSTANCE _43_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.183:0.183:0.183) (0.739:0.739:0.739))
-    (IOPATH B X (0.193:0.193:0.193) (0.711:0.711:0.711))
-    (IOPATH C X (0.166:0.166:0.166) (0.679:0.679:0.679))
-    (IOPATH D_N X (0.267:0.267:0.267) (0.679:0.679:0.679))
+    (IOPATH A X (0.324:0.324:0.324) (1.742:1.742:1.742))
+    (IOPATH B X (0.343:0.343:0.343) (1.683:1.683:1.683))
+    (IOPATH C X (0.290:0.290:0.290) (1.620:1.620:1.620))
+    (IOPATH D_N X (0.510:0.510:0.510) (1.631:1.631:1.631))
    )
   )
  )
@@ -293,9 +293,9 @@
   (INSTANCE _44_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.303:0.303:0.303) (0.092:0.092:0.092))
-    (IOPATH B Y (0.307:0.308:0.308) (0.078:0.078:0.078))
-    (IOPATH C_N Y (0.316:0.316:0.316) (0.199:0.199:0.199))
+    (IOPATH A Y (0.522:0.522:0.522) (0.186:0.186:0.186))
+    (IOPATH B Y (0.553:0.554:0.555) (0.150:0.150:0.151))
+    (IOPATH C_N Y (0.574:0.574:0.574) (0.417:0.417:0.417))
    )
   )
  )
@@ -304,8 +304,8 @@
   (INSTANCE _45_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.075:0.075:0.075) (0.069:0.069:0.069))
-    (IOPATH B Y (0.061:0.063:0.066) (0.081:0.082:0.082))
+    (IOPATH A Y (0.139:0.139:0.139) (0.172:0.172:0.172))
+    (IOPATH B Y (0.101:0.106:0.111) (0.210:0.211:0.211))
    )
   )
  )
@@ -314,8 +314,8 @@
   (INSTANCE _46_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A_N X (0.226:0.226:0.226) (0.218:0.218:0.218))
-    (IOPATH B X (0.182:0.182:0.182) (0.198:0.198:0.198))
+    (IOPATH A_N X (0.447:0.447:0.447) (0.464:0.464:0.464))
+    (IOPATH B X (0.362:0.362:0.362) (0.415:0.415:0.415))
    )
   )
  )
@@ -324,8 +324,8 @@
   (INSTANCE _47_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.053:0.056:0.058) (0.076:0.076:0.076))
-    (IOPATH B Y (0.061:0.061:0.061) (0.053:0.053:0.053))
+    (IOPATH A Y (0.090:0.094:0.099) (0.201:0.202:0.202))
+    (IOPATH B Y (0.107:0.107:0.107) (0.118:0.118:0.118))
    )
   )
  )
@@ -334,8 +334,8 @@
   (INSTANCE _48_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A_N X (0.234:0.234:0.234) (0.224:0.224:0.224))
-    (IOPATH B X (0.166:0.166:0.166) (0.182:0.182:0.182))
+    (IOPATH A_N X (0.467:0.467:0.467) (0.483:0.483:0.483))
+    (IOPATH B X (0.329:0.329:0.329) (0.381:0.381:0.381))
    )
   )
  )
@@ -344,8 +344,8 @@
   (INSTANCE _49_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.054:0.056:0.058) (0.077:0.077:0.077))
-    (IOPATH B Y (0.060:0.060:0.060) (0.052:0.052:0.052))
+    (IOPATH A Y (0.091:0.095:0.100) (0.203:0.203:0.204))
+    (IOPATH B Y (0.105:0.105:0.105) (0.115:0.115:0.115))
    )
   )
  )
@@ -354,8 +354,8 @@
   (INSTANCE _50_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.060:0.062:0.065) (0.068:0.068:0.068))
-    (IOPATH B Y (0.062:0.065:0.067) (0.084:0.084:0.084))
+    (IOPATH A Y (0.099:0.103:0.107) (0.173:0.173:0.173))
+    (IOPATH B Y (0.103:0.108:0.113) (0.214:0.214:0.215))
    )
   )
  )
@@ -364,9 +364,9 @@
   (INSTANCE _51_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.322:0.322:0.322) (0.105:0.105:0.105))
-    (IOPATH B Y (0.295:0.295:0.295) (0.093:0.093:0.093))
-    (IOPATH C Y (0.273:0.273:0.274) (0.075:0.075:0.076))
+    (IOPATH A Y (0.558:0.558:0.558) (0.213:0.213:0.213))
+    (IOPATH B Y (0.507:0.507:0.507) (0.188:0.188:0.188))
+    (IOPATH C Y (0.489:0.489:0.490) (0.146:0.146:0.147))
    )
   )
  )
@@ -375,8 +375,8 @@
   (INSTANCE _52_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.088:0.088:0.088) (0.086:0.086:0.086))
-    (IOPATH B Y (0.070:0.075:0.080) (0.101:0.101:0.101))
+    (IOPATH A Y (0.161:0.161:0.161) (0.201:0.201:0.201))
+    (IOPATH B Y (0.117:0.124:0.131) (0.249:0.250:0.250))
    )
   )
  )
@@ -385,8 +385,8 @@
   (INSTANCE _53_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.055:0.056:0.056) (0.051:0.051:0.051))
-    (IOPATH B Y (0.063:0.068:0.073) (0.087:0.087:0.087))
+    (IOPATH A Y (0.099:0.099:0.099) (0.114:0.114:0.114))
+    (IOPATH B Y (0.104:0.111:0.118) (0.226:0.227:0.227))
    )
   )
  )
@@ -395,8 +395,8 @@
   (INSTANCE _54_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.053:0.053:0.053) (0.049:0.049:0.049))
-    (IOPATH B Y (0.062:0.067:0.072) (0.086:0.086:0.086))
+    (IOPATH A Y (0.095:0.095:0.095) (0.108:0.108:0.108))
+    (IOPATH B Y (0.103:0.110:0.117) (0.224:0.225:0.225))
    )
   )
  )
@@ -405,8 +405,8 @@
   (INSTANCE _55_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.061:0.063:0.066) (0.070:0.070:0.070))
-    (IOPATH B Y (0.063:0.068:0.073) (0.087:0.087:0.087))
+    (IOPATH A Y (0.101:0.105:0.109) (0.176:0.176:0.177))
+    (IOPATH B Y (0.104:0.111:0.118) (0.227:0.227:0.227))
    )
   )
  )
@@ -415,7 +415,7 @@
   (INSTANCE _57__2)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.033:0.033:0.033) (0.022:0.022:0.022))
+    (IOPATH A Y (0.054:0.054:0.054) (0.045:0.045:0.045))
    )
   )
  )
@@ -424,7 +424,7 @@
   (INSTANCE _58__3)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.035:0.035:0.035) (0.024:0.024:0.024))
+    (IOPATH A Y (0.058:0.058:0.058) (0.048:0.048:0.048))
    )
   )
  )
@@ -433,7 +433,7 @@
   (INSTANCE _59__4)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.035:0.035:0.035) (0.024:0.024:0.024))
+    (IOPATH A Y (0.058:0.058:0.058) (0.048:0.048:0.048))
    )
   )
  )
@@ -442,7 +442,7 @@
   (INSTANCE clkbuf_0_reg_clk)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.126:0.126:0.126) (0.133:0.133:0.133))
+    (IOPATH A X (0.225:0.225:0.225) (0.240:0.240:0.240))
    )
   )
  )
@@ -451,14 +451,14 @@
   (INSTANCE _60_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A0 X (0.232:0.232:0.232) (0.490:0.490:0.490))
-    (IOPATH A1 X (0.239:0.239:0.239) (0.501:0.501:0.501))
-    (IOPATH A2 X (0.239:0.239:0.239) (0.491:0.491:0.491))
-    (IOPATH A3 X (0.237:0.237:0.237) (0.480:0.480:0.480))
-    (IOPATH S0 X (0.339:0.339:0.339) (0.569:0.569:0.569))
-    (IOPATH S0 X (0.243:0.243:0.243) (0.457:0.457:0.457))
-    (IOPATH S1 X (0.232:0.232:0.232) (0.316:0.316:0.316))
-    (IOPATH S1 X (0.190:0.190:0.190) (0.248:0.248:0.248))
+    (IOPATH A0 X (0.480:0.480:0.480) (1.119:1.119:1.119))
+    (IOPATH A1 X (0.491:0.491:0.491) (1.141:1.141:1.141))
+    (IOPATH A2 X (0.489:0.489:0.489) (1.116:1.116:1.116))
+    (IOPATH A3 X (0.483:0.483:0.483) (1.111:1.111:1.111))
+    (IOPATH S0 X (0.695:0.695:0.695) (1.290:1.290:1.290))
+    (IOPATH S0 X (0.491:0.491:0.491) (1.051:1.051:1.051))
+    (IOPATH S1 X (0.464:0.464:0.464) (0.749:0.749:0.749))
+    (IOPATH S1 X (0.374:0.374:0.374) (0.593:0.593:0.593))
    )
   )
  )
@@ -467,8 +467,8 @@
   (INSTANCE _61_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.147:0.147:0.147) (0.253:0.253:0.253))
-    (IOPATH B X (0.110:0.110:0.111) (0.226:0.229:0.233))
+    (IOPATH A X (0.285:0.285:0.285) (0.568:0.568:0.568))
+    (IOPATH B X (0.201:0.202:0.203) (0.518:0.520:0.522))
    )
   )
  )
@@ -477,14 +477,14 @@
   (INSTANCE _62_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A0 X (0.246:0.246:0.246) (0.493:0.493:0.493))
-    (IOPATH A1 X (0.248:0.248:0.248) (0.500:0.500:0.500))
-    (IOPATH A2 X (0.251:0.251:0.251) (0.493:0.493:0.493))
-    (IOPATH A3 X (0.259:0.259:0.259) (0.488:0.488:0.488))
-    (IOPATH S0 X (0.328:0.328:0.328) (0.555:0.555:0.555))
-    (IOPATH S0 X (0.232:0.232:0.232) (0.443:0.443:0.443))
-    (IOPATH S1 X (0.220:0.220:0.220) (0.302:0.302:0.302))
-    (IOPATH S1 X (0.179:0.179:0.179) (0.235:0.235:0.235))
+    (IOPATH A0 X (0.514:0.514:0.514) (1.131:1.131:1.131))
+    (IOPATH A1 X (0.515:0.515:0.515) (1.144:1.144:1.144))
+    (IOPATH A2 X (0.521:0.521:0.521) (1.126:1.126:1.126))
+    (IOPATH A3 X (0.537:0.537:0.537) (1.134:1.134:1.134))
+    (IOPATH S0 X (0.677:0.677:0.677) (1.264:1.264:1.264))
+    (IOPATH S0 X (0.472:0.472:0.472) (1.025:1.025:1.025))
+    (IOPATH S1 X (0.445:0.445:0.445) (0.723:0.723:0.723))
+    (IOPATH S1 X (0.355:0.355:0.355) (0.567:0.567:0.567))
    )
   )
  )
@@ -493,8 +493,8 @@
   (INSTANCE _63_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.102:0.103:0.103) (0.233:0.237:0.240))
-    (IOPATH B_N X (0.180:0.180:0.180) (0.258:0.258:0.258))
+    (IOPATH A X (0.185:0.186:0.187) (0.533:0.535:0.537))
+    (IOPATH B_N X (0.349:0.349:0.349) (0.595:0.595:0.595))
    )
   )
  )
@@ -503,10 +503,10 @@
   (INSTANCE _64_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.192:0.192:0.192) (0.592:0.592:0.592))
-    (IOPATH B X (0.169:0.169:0.169) (0.564:0.564:0.564))
-    (IOPATH C X (0.176:0.176:0.176) (0.534:0.534:0.534))
-    (IOPATH D X (0.149:0.149:0.149) (0.459:0.459:0.459))
+    (IOPATH A X (0.350:0.350:0.350) (1.377:1.377:1.377))
+    (IOPATH B X (0.297:0.297:0.297) (1.318:1.318:1.318))
+    (IOPATH C X (0.315:0.315:0.315) (1.258:1.258:1.258))
+    (IOPATH D X (0.260:0.260:0.260) (1.097:1.097:1.097))
    )
   )
  )
@@ -515,8 +515,8 @@
   (INSTANCE _65_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.115:0.115:0.115) (0.069:0.069:0.069))
-    (IOPATH B Y (0.121:0.122:0.122) (0.053:0.053:0.053))
+    (IOPATH A Y (0.204:0.204:0.204) (0.154:0.154:0.154))
+    (IOPATH B Y (0.231:0.232:0.232) (0.113:0.114:0.114))
    )
   )
  )
@@ -525,11 +525,11 @@
   (INSTANCE _66_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A1 X (0.165:0.165:0.166) (0.231:0.231:0.231))
-    (IOPATH A2 X (0.171:0.171:0.171) (0.255:0.255:0.255))
-    (IOPATH A3 X (0.183:0.184:0.184) (0.258:0.261:0.263))
-    (IOPATH B1 X (0.149:0.149:0.149) (0.242:0.242:0.243))
-    (IOPATH B2 X (0.153:0.153:0.153) (0.226:0.226:0.226))
+    (IOPATH A1 X (0.350:0.350:0.351) (0.436:0.436:0.436))
+    (IOPATH A2 X (0.367:0.367:0.367) (0.474:0.474:0.475))
+    (IOPATH A3 X (0.397:0.400:0.402) (0.469:0.473:0.477))
+    (IOPATH B1 X (0.297:0.297:0.298) (0.472:0.473:0.473))
+    (IOPATH B2 X (0.308:0.308:0.308) (0.419:0.419:0.419))
    )
   )
  )
@@ -538,14 +538,14 @@
   (INSTANCE _67_)
   (DELAY
    (ABSOLUTE
-    (IOPATH CLK Q (0.389:0.389:0.389) (0.347:0.347:0.347))
+    (IOPATH CLK Q (0.770:0.770:0.770) (0.673:0.673:0.673))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge CLK) (-0.042:-0.042:-0.042))
-    (HOLD (negedge D) (posedge CLK) (-0.050:-0.051:-0.052))
-    (SETUP (posedge D) (posedge CLK) (0.071:0.071:0.071))
-    (SETUP (negedge D) (posedge CLK) (0.117:0.118:0.119))
+    (HOLD (posedge D) (posedge CLK) (-0.093:-0.093:-0.093))
+    (HOLD (negedge D) (posedge CLK) (-0.098:-0.099:-0.099))
+    (SETUP (posedge D) (posedge CLK) (0.165:0.165:0.165))
+    (SETUP (negedge D) (posedge CLK) (0.284:0.284:0.285))
   )
  )
  (CELL
@@ -553,14 +553,14 @@
   (INSTANCE _68_)
   (DELAY
    (ABSOLUTE
-    (IOPATH CLK Q (0.411:0.411:0.411) (0.348:0.348:0.348))
+    (IOPATH CLK Q (0.797:0.797:0.797) (0.676:0.676:0.676))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge CLK) (-0.066:-0.066:-0.066))
-    (HOLD (negedge D) (posedge CLK) (-0.064:-0.066:-0.068))
-    (SETUP (posedge D) (posedge CLK) (0.092:0.092:0.092))
-    (SETUP (negedge D) (posedge CLK) (0.122:0.124:0.126))
+    (HOLD (posedge D) (posedge CLK) (-0.138:-0.138:-0.138))
+    (HOLD (negedge D) (posedge CLK) (-0.122:-0.124:-0.126))
+    (SETUP (posedge D) (posedge CLK) (0.202:0.202:0.202))
+    (SETUP (negedge D) (posedge CLK) (0.288:0.290:0.293))
   )
  )
  (CELL
@@ -568,14 +568,14 @@
   (INSTANCE _69_)
   (DELAY
    (ABSOLUTE
-    (IOPATH CLK Q (0.403:0.403:0.403) (0.342:0.342:0.342))
+    (IOPATH CLK Q (0.786:0.786:0.786) (0.668:0.668:0.668))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge CLK) (-0.035:-0.035:-0.035))
-    (HOLD (negedge D) (posedge CLK) (-0.054:-0.055:-0.056))
-    (SETUP (posedge D) (posedge CLK) (0.058:0.058:0.058))
-    (SETUP (negedge D) (posedge CLK) (0.111:0.112:0.113))
+    (HOLD (posedge D) (posedge CLK) (-0.080:-0.081:-0.081))
+    (HOLD (negedge D) (posedge CLK) (-0.112:-0.113:-0.115))
+    (SETUP (posedge D) (posedge CLK) (0.137:0.138:0.138))
+    (SETUP (negedge D) (posedge CLK) (0.277:0.278:0.280))
   )
  )
  (CELL
@@ -583,14 +583,14 @@
   (INSTANCE _70_)
   (DELAY
    (ABSOLUTE
-    (IOPATH CLK Q (0.389:0.389:0.389) (0.346:0.346:0.346))
+    (IOPATH CLK Q (0.773:0.773:0.773) (0.673:0.673:0.673))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge CLK) (-0.025:-0.025:-0.025))
-    (HOLD (negedge D) (posedge CLK) (-0.033:-0.033:-0.033))
-    (SETUP (posedge D) (posedge CLK) (0.052:0.052:0.052))
-    (SETUP (negedge D) (posedge CLK) (0.099:0.099:0.099))
+    (HOLD (posedge D) (posedge CLK) (-0.061:-0.061:-0.061))
+    (HOLD (negedge D) (posedge CLK) (-0.073:-0.073:-0.073))
+    (SETUP (posedge D) (posedge CLK) (0.129:0.129:0.129))
+    (SETUP (negedge D) (posedge CLK) (0.255:0.255:0.255))
   )
  )
  (CELL
@@ -598,15 +598,15 @@
   (INSTANCE _71_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.452:0.488:0.524) (0.288:0.315:0.342))
-    (IOPATH GATE_N Q (0.538:0.538:0.538) (0.336:0.337:0.337))
+    (IOPATH D Q (0.874:0.966:1.057) (0.566:0.619:0.671))
+    (IOPATH GATE_N Q (1.043:1.044:1.045) (0.662:0.662:0.663))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.139:-0.169:-0.198))
-    (HOLD (negedge D) (posedge GATE_N) (-0.090:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.150:0.179:0.208))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.312:-0.366:-0.420))
+    (HOLD (negedge D) (posedge GATE_N) (-0.196:-0.226:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.342:0.395:0.449))
+    (SETUP (negedge D) (posedge GATE_N) (0.225:0.255:0.284))
   )
  )
  (CELL
@@ -614,15 +614,15 @@
   (INSTANCE _72_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.418:0.454:0.490) (0.270:0.297:0.325))
-    (IOPATH GATE_N Q (0.493:0.501:0.509) (0.308:0.315:0.323))
+    (IOPATH D Q (0.821:0.912:1.004) (0.534:0.586:0.639))
+    (IOPATH GATE_N Q (0.975:0.988:1.000) (0.613:0.626:0.640))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.141:-0.170:-0.199))
-    (HOLD (negedge D) (posedge GATE_N) (-0.091:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.151:0.180:0.209))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.316:-0.369:-0.422))
+    (HOLD (negedge D) (posedge GATE_N) (-0.197:-0.227:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.345:0.398:0.450))
+    (SETUP (negedge D) (posedge GATE_N) (0.227:0.256:0.285))
   )
  )
  (CELL
@@ -630,15 +630,15 @@
   (INSTANCE _73_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.396:0.432:0.468) (0.258:0.285:0.312))
-    (IOPATH GATE_N Q (0.471:0.479:0.487) (0.295:0.303:0.311))
+    (IOPATH D Q (0.784:0.876:0.968) (0.512:0.564:0.616))
+    (IOPATH GATE_N Q (0.939:0.952:0.964) (0.591:0.604:0.618))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.141:-0.170:-0.199))
-    (HOLD (negedge D) (posedge GATE_N) (-0.091:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.151:0.180:0.209))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.316:-0.369:-0.422))
+    (HOLD (negedge D) (posedge GATE_N) (-0.197:-0.227:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.345:0.398:0.450))
+    (SETUP (negedge D) (posedge GATE_N) (0.227:0.256:0.285))
   )
  )
  (CELL
@@ -646,15 +646,15 @@
   (INSTANCE _74_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.422:0.458:0.494) (0.272:0.299:0.327))
-    (IOPATH GATE_N Q (0.507:0.508:0.509) (0.320:0.320:0.321))
+    (IOPATH D Q (0.826:0.918:1.009) (0.537:0.590:0.642))
+    (IOPATH GATE_N Q (0.997:0.997:0.997) (0.633:0.634:0.634))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.140:-0.169:-0.199))
-    (HOLD (negedge D) (posedge GATE_N) (-0.091:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.150:0.179:0.209))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.315:-0.368:-0.421))
+    (HOLD (negedge D) (posedge GATE_N) (-0.197:-0.226:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.344:0.397:0.449))
+    (SETUP (negedge D) (posedge GATE_N) (0.226:0.255:0.284))
   )
  )
  (CELL
@@ -662,15 +662,15 @@
   (INSTANCE _75_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.366:0.402:0.438) (0.242:0.270:0.297))
-    (IOPATH GATE_N Q (0.458:0.458:0.458) (0.296:0.296:0.296))
+    (IOPATH D Q (0.735:0.826:0.918) (0.481:0.533:0.586))
+    (IOPATH GATE_N Q (0.914:0.915:0.916) (0.586:0.587:0.588))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.137:-0.166:-0.195))
-    (HOLD (negedge D) (posedge GATE_N) (-0.089:-0.111:-0.132))
-    (SETUP (posedge D) (posedge GATE_N) (0.147:0.176:0.205))
-    (SETUP (negedge D) (posedge GATE_N) (0.103:0.124:0.145))
+    (HOLD (posedge D) (posedge GATE_N) (-0.309:-0.362:-0.415))
+    (HOLD (negedge D) (posedge GATE_N) (-0.194:-0.223:-0.253))
+    (SETUP (posedge D) (posedge GATE_N) (0.338:0.391:0.443))
+    (SETUP (negedge D) (posedge GATE_N) (0.224:0.253:0.282))
   )
  )
  (CELL
@@ -678,15 +678,15 @@
   (INSTANCE _76_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.357:0.393:0.429) (0.237:0.265:0.292))
-    (IOPATH GATE_N Q (0.435:0.440:0.446) (0.277:0.283:0.288))
+    (IOPATH D Q (0.720:0.812:0.903) (0.471:0.524:0.576))
+    (IOPATH GATE_N Q (0.878:0.886:0.893) (0.555:0.563:0.571))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.139:-0.169:-0.199))
-    (HOLD (negedge D) (posedge GATE_N) (-0.090:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.149:0.179:0.209))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.314:-0.367:-0.421))
+    (HOLD (negedge D) (posedge GATE_N) (-0.196:-0.226:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.343:0.396:0.449))
+    (SETUP (negedge D) (posedge GATE_N) (0.226:0.255:0.284))
   )
  )
  (CELL
@@ -694,15 +694,15 @@
   (INSTANCE _77_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.345:0.381:0.417) (0.231:0.258:0.285))
-    (IOPATH GATE_N Q (0.422:0.428:0.433) (0.270:0.275:0.281))
+    (IOPATH D Q (0.701:0.792:0.884) (0.459:0.511:0.564))
+    (IOPATH GATE_N Q (0.857:0.865:0.873) (0.541:0.549:0.557))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.140:-0.169:-0.199))
-    (HOLD (negedge D) (posedge GATE_N) (-0.090:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.150:0.179:0.209))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.314:-0.368:-0.421))
+    (HOLD (negedge D) (posedge GATE_N) (-0.197:-0.226:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.344:0.397:0.449))
+    (SETUP (negedge D) (posedge GATE_N) (0.226:0.255:0.284))
   )
  )
  (CELL
@@ -710,15 +710,15 @@
   (INSTANCE _78_)
   (DELAY
    (ABSOLUTE
-    (IOPATH D Q (0.357:0.393:0.429) (0.237:0.265:0.292))
-    (IOPATH GATE_N Q (0.443:0.444:0.445) (0.286:0.287:0.288))
+    (IOPATH D Q (0.720:0.811:0.903) (0.471:0.524:0.576))
+    (IOPATH GATE_N Q (0.891:0.892:0.893) (0.569:0.570:0.570))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge GATE_N) (-0.139:-0.169:-0.198))
-    (HOLD (negedge D) (posedge GATE_N) (-0.090:-0.112:-0.133))
-    (SETUP (posedge D) (posedge GATE_N) (0.149:0.179:0.208))
-    (SETUP (negedge D) (posedge GATE_N) (0.104:0.125:0.146))
+    (HOLD (posedge D) (posedge GATE_N) (-0.314:-0.367:-0.420))
+    (HOLD (negedge D) (posedge GATE_N) (-0.196:-0.226:-0.256))
+    (SETUP (posedge D) (posedge GATE_N) (0.343:0.396:0.449))
+    (SETUP (negedge D) (posedge GATE_N) (0.226:0.255:0.284))
   )
  )
  (CELL
@@ -726,14 +726,14 @@
   (INSTANCE _79_)
   (DELAY
    (ABSOLUTE
-    (IOPATH CLK Q (0.353:0.353:0.353) (0.319:0.319:0.319))
+    (IOPATH CLK Q (0.711:0.711:0.711) (0.627:0.627:0.627))
    )
   )
   (TIMINGCHECK
-    (HOLD (posedge D) (posedge CLK) (-0.037:-0.038:-0.038))
-    (HOLD (negedge D) (posedge CLK) (-0.057:-0.058:-0.058))
-    (SETUP (posedge D) (posedge CLK) (0.061:0.061:0.062))
-    (SETUP (negedge D) (posedge CLK) (0.114:0.115:0.115))
+    (HOLD (posedge D) (posedge CLK) (-0.086:-0.086:-0.087))
+    (HOLD (negedge D) (posedge CLK) (-0.114:-0.115:-0.116))
+    (SETUP (posedge D) (posedge CLK) (0.143:0.144:0.145))
+    (SETUP (negedge D) (posedge CLK) (0.279:0.280:0.280))
   )
  )
  (CELL
@@ -741,7 +741,7 @@
   (INSTANCE _56__1)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Y (0.034:0.034:0.034) (0.023:0.023:0.023))
+    (IOPATH A Y (0.057:0.057:0.057) (0.047:0.047:0.047))
    )
   )
  )
@@ -750,8 +750,8 @@
   (INSTANCE _81_)
   (DELAY
    (ABSOLUTE
-    (IOPATH A Z (0.347:0.347:0.347) (0.233:0.233:0.233))
-    (IOPATH TE_B Z (0.305:0.305:0.305) (0.232:0.232:0.232))
+    (IOPATH A Z (0.591:0.591:0.591) (0.429:0.429:0.429))
+    (IOPATH TE_B Z (0.502:0.502:0.502) (0.436:0.436:0.436))
    )
   )
  )
@@ -760,7 +760,7 @@
   (INSTANCE input1)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.132:0.132:0.132) (0.105:0.105:0.105))
+    (IOPATH A X (0.232:0.232:0.232) (0.198:0.198:0.198))
    )
   )
  )
@@ -769,7 +769,7 @@
   (INSTANCE input2)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.111:0.111:0.111) (0.093:0.093:0.093))
+    (IOPATH A X (0.197:0.197:0.197) (0.176:0.176:0.176))
    )
   )
  )
@@ -778,7 +778,7 @@
   (INSTANCE input3)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.084:0.084:0.084) (0.077:0.077:0.077))
+    (IOPATH A X (0.152:0.152:0.152) (0.146:0.146:0.146))
    )
   )
  )
@@ -787,7 +787,7 @@
   (INSTANCE input4)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.164:0.164:0.164) (0.122:0.122:0.122))
+    (IOPATH A X (0.284:0.284:0.284) (0.230:0.230:0.230))
    )
   )
  )
@@ -796,7 +796,7 @@
   (INSTANCE output5)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.259:0.259:0.259) (0.214:0.214:0.214))
+    (IOPATH A X (0.478:0.478:0.478) (0.422:0.422:0.422))
    )
   )
  )
@@ -805,7 +805,7 @@
   (INSTANCE output6)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.246:0.246:0.246) (0.204:0.204:0.204))
+    (IOPATH A X (0.449:0.449:0.449) (0.400:0.400:0.400))
    )
   )
  )
@@ -814,7 +814,7 @@
   (INSTANCE output7)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.237:0.237:0.237) (0.197:0.197:0.197))
+    (IOPATH A X (0.429:0.429:0.429) (0.386:0.386:0.386))
    )
   )
  )
@@ -823,7 +823,7 @@
   (INSTANCE output8)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.247:0.247:0.247) (0.205:0.205:0.205))
+    (IOPATH A X (0.452:0.452:0.452) (0.402:0.402:0.402))
    )
   )
  )
@@ -832,7 +832,7 @@
   (INSTANCE output9)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.227:0.227:0.227) (0.189:0.189:0.189))
+    (IOPATH A X (0.403:0.403:0.403) (0.370:0.370:0.370))
    )
   )
  )
@@ -841,7 +841,7 @@
   (INSTANCE output10)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.222:0.222:0.222) (0.186:0.186:0.186))
+    (IOPATH A X (0.393:0.393:0.393) (0.364:0.363:0.363))
    )
   )
  )
@@ -850,7 +850,7 @@
   (INSTANCE output11)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.215:0.215:0.215) (0.182:0.182:0.182))
+    (IOPATH A X (0.379:0.379:0.379) (0.355:0.355:0.355))
    )
   )
  )
@@ -859,7 +859,7 @@
   (INSTANCE output12)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.221:0.221:0.221) (0.185:0.185:0.185))
+    (IOPATH A X (0.391:0.391:0.391) (0.362:0.362:0.362))
    )
   )
  )
@@ -868,7 +868,7 @@
   (INSTANCE clkbuf_1_0__f_reg_clk)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.117:0.117:0.117) (0.136:0.136:0.136))
+    (IOPATH A X (0.210:0.210:0.210) (0.241:0.241:0.241))
    )
   )
  )
@@ -877,7 +877,7 @@
   (INSTANCE clkbuf_1_1__f_reg_clk)
   (DELAY
    (ABSOLUTE
-    (IOPATH A X (0.115:0.115:0.115) (0.133:0.133:0.133))
+    (IOPATH A X (0.206:0.206:0.206) (0.238:0.238:0.238))
    )
   )
  )

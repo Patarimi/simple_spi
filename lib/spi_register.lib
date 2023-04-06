@@ -43,33 +43,33 @@ library (spi_register) {
   cell ("spi_register") {
     pin("reg_bus") {
       direction : inout;
-      capacitance : 0.0583;
+      capacitance : 0.0505;
     }
     pin("reg_clk") {
       direction : input;
-      capacitance : 0.0103;
+      capacitance : 0.0106;
     }
     pin("reg_dir") {
       direction : input;
-      capacitance : 0.0040;
+      capacitance : 0.0043;
       timing() {
         related_pin : "reg_clk";
         timing_type : hold_rising;
 	rise_constraint(scalar) {
-          values("-0.15954");
+          values("-0.27931");
 	}
 	fall_constraint(scalar) {
-          values("-0.61489");
+          values("-0.74093");
 	}
       }
       timing() {
         related_pin : "reg_clk";
         timing_type : setup_rising;
 	rise_constraint(scalar) {
-          values("2.55909");
+          values("0.52453");
 	}
 	fall_constraint(scalar) {
-          values("2.60607");
+          values("0.81008");
 	}
       }
     }
@@ -87,73 +87,73 @@ library (spi_register) {
       capacitance : 0.0000;
     pin("reg_addr[2]") {
       direction : input;
-      capacitance : 0.0041;
+      capacitance : 0.0045;
       timing() {
         related_pin : "reg_clk";
         timing_type : hold_rising;
 	rise_constraint(scalar) {
-          values("-0.06613");
+          values("-0.15556");
 	}
 	fall_constraint(scalar) {
-          values("-0.45977");
+          values("-0.56307");
 	}
       }
       timing() {
         related_pin : "reg_clk";
         timing_type : setup_rising;
 	rise_constraint(scalar) {
-          values("0.38409");
+          values("0.40078");
 	}
 	fall_constraint(scalar) {
-          values("0.61987");
+          values("0.63222");
 	}
       }
     }
     pin("reg_addr[1]") {
       direction : input;
-      capacitance : 0.0040;
+      capacitance : 0.0044;
       timing() {
         related_pin : "reg_clk";
         timing_type : hold_rising;
 	rise_constraint(scalar) {
-          values("-0.09381");
+          values("-0.20300");
 	}
 	fall_constraint(scalar) {
-          values("-0.56617");
+          values("-0.68378");
 	}
       }
       timing() {
         related_pin : "reg_clk";
         timing_type : setup_rising;
 	rise_constraint(scalar) {
-          values("0.41468");
+          values("0.44822");
 	}
 	fall_constraint(scalar) {
-          values("0.73746");
+          values("0.75293");
 	}
       }
     }
     pin("reg_addr[0]") {
       direction : input;
-      capacitance : 0.0042;
+      capacitance : 0.0047;
       timing() {
         related_pin : "reg_clk";
         timing_type : hold_rising;
 	rise_constraint(scalar) {
-          values("-0.10587");
+          values("-0.23224");
 	}
 	fall_constraint(scalar) {
-          values("-0.54173");
+          values("-0.66658");
 	}
       }
       timing() {
         related_pin : "reg_clk";
         timing_type : setup_rising;
 	rise_constraint(scalar) {
-          values("0.42801");
+          values("0.47746");
 	}
 	fall_constraint(scalar) {
-          values("0.71046");
+          values("0.73573");
 	}
       }
     }
@@ -164,35 +164,35 @@ library (spi_register) {
       capacitance : 0.0000;
     pin("reg_data[7]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0008;
     }
     pin("reg_data[6]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0009;
     }
     pin("reg_data[5]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0012;
     }
     pin("reg_data[4]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0014;
     }
     pin("reg_data[3]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0009;
     }
     pin("reg_data[2]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0009;
     }
     pin("reg_data[1]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0009;
     }
     pin("reg_data[0]") {
       direction : output;
-      capacitance : 0.0334;
+      capacitance : 0.0009;
     }
     }
   }
